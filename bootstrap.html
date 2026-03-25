@@ -1,24 +1,141 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">products & services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" contact="true">contact</a>
-        </li>
-      </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Eva</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
+
+<section id="home" class="bg-light text-center d-flex align-items-center" style="height: 100vh;">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Hello, I'm Eva</h1>
+        <p class="lead">Aspiring UI/UX Designer with an ambassion and passion for building clean designs and developing codes for easy user flows.</p>
+        <a href="https://www.linkedin.com/feed/" class="btn btn-primary btn-lg mt-3">see more</a>
+    </div>
+</section>
+
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center mb-4 mb-md-0">
+                <img src="IMAGES/IMG 05.png" class="img-fluid rounded" alt="Profile Image" height="300px" width="300px">
+            </div>
+            <div class="col-md-6">
+                <h2>About Me</h2>
+                <p>
+                    I am a very passionate learner currently growing my skills in web development and designig. 
+                    I like impressive and very attractive designs and eagerly learning more for the betterment of
+                  my projects.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">My Projects</h2>
+        <div class="row g-4">
+
+        
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="IMAGES/IMG 02.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project One</h5>
+                        <p class="card-text">A Cake shop dealing in all kinds of cakes for different Occassions.</p>
+                        <a href="https://unsplash.com/s/photos/cake-shops" class="btn btn-primary">View more</a>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="IMAGES/IMG 03.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Two</h5>
+                        <p class="card-text">A Spa created to relieve your bodies and to care for all your bodies.</p>
+                        <a href="https://unsplash.com/s/photos/spa" class="btn btn-primary">View more</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="IMAGES/IMG 04.jpg"height="200px" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Three</h5>
+                        <p class="card-text">A Poultry farm to supply you with very hygienic chicken and all chicken products.</p>
+                        <a href="https://unsplash.com/s/photos/poultry-farm"class="btn btn-primary">View more</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="4" placeholder="Write your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">©️ 2026 EVA ZALWANGO. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
